@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiple projections instancing example - three-projected-material</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script type="module" src="https://unpkg.com/three@0.122.0/build/three.module.js"></script>
   </head>
   <body>
     <canvas id="app"></canvas>
@@ -12,7 +13,7 @@
 
 
     <script type="module">
-     import * as THREE from '//unpkg.com/three@0.122.0/build/three.module.js';
+    
       import WebGLApp from './lib/WebGLApp.js'
       import ProjectedMaterial, { allocateProjectionData } from '//unpkg.com/three-projected-material@1.1.0/build/ProjectedMaterial.module.js'
       import { visibleWidthAtZDepth, visibleHeightAtZDepth } from './lib/three-utils.js'
